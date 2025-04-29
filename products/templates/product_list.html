@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product list</title>
+  </head>
+  <body>
+    
+
+
+<h2 class="mb-4">All Products</h2>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text text-muted">₹ {{ product.price }}</p>
+        <a href="#" class="btn btn-outline-primary btn-sm">View</a>
+      </div>
+    </div>
+  </div>
+  
+  <p>No products available.</p>
+</div>
+  </body>
+</html>
